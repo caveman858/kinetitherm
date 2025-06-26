@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kinetitherm - Innovating Sustainable Power</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <!-- Logo/Company Name -->
+            <div class="flex items-center space-x-2">
+                <!-- Simple SVG as placeholder for a logo -->
+                <svg class="w-8 h-8 text-indigo-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-5-10 5zM12 14l-10 5 10 5 10-5-10-5z"/>
+                </svg>
+                <a href="#hero" class="text-2xl font-bold text-gray-900">kinetitherm</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="block lg:hidden">
+                <button id="menu-button" class="text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded-md p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <div id="nav-links" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-8 mt-4 lg:mt-0 w-full lg:w-auto">
+                <a href="#hero" class="text-gray-600 hover:text-indigo-600 font-medium py-2 lg:py-0 transition duration-300 ease-in-out rounded-md px-3">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 font-medium py-2 lg:py-0 transition duration-300 ease-in-out rounded-md px-3">About Us</a>
+                <a href="#technology" class="text-gray-600 hover:text-indigo-600 font-medium py-2 lg:py-0 transition duration-300 ease-in-out rounded-md px-3">Our Technology</a>
+                <a href="#research" class="text-gray-600 hover:text-indigo-600 font-medium py-2 lg:py-0 transition duration-300 ease-in-out rounded-md px-3">Research & Development</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium py-2 lg:py-0 transition duration-300 ease-in-out rounded-md px-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="relative bg-gradient-to-r from-indigo-700 to-purple-600 text-white py-20 lg:py-32 overflow-hidden shadow-xl rounded-b-xl">
+        <div class="absolute inset-0 z-0">
+            <!-- Background pattern for visual interest -->
+            <svg class="absolute bottom-0 left-0 w-full h-full opacity-10" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <defs>
+                    <pattern id="pattern-cubes" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                        <path d="M0 0H10V10H0z" fill="rgba(255,255,255,0.1)"></path>
+                    </pattern>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-cubes)"></rect>
+            </svg>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                Unlocking the Power of kinetithermal Energy
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in">
+                Pioneering advanced R&D in energy conversion and storage, transforming kinetic and thermal forces into sustainable solutions.
+            </p>
+            <a href="#technology" class="bg-white text-indigo-700 hover:bg-indigo-100 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 ease-in-out transform hover:scale-105 inline-block">
+                Explore Our Innovations
+            </a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 lg:py-24 bg-white rounded-xl shadow-inner mx-4 my-8">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">About kinetitherm</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="md:order-2">
+                    <img src="https://placehold.co/600x400/A78BFA/ffffff?text=Our+Vision" alt="kinetitherm Vision" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:order-1">
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        At kinetitherm, we believe the future of power lies in harnessing the fundamental forces around us. Our mission is to lead the charge in energy innovation by developing cutting-edge technologies that efficiently convert and store kinetic and thermal energy. We are dedicated to creating a sustainable tomorrow, driving breakthroughs that provide reliable, clean, and accessible energy for all.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Our expert team of scientists and engineers is committed to rigorous research and development, pushing the boundaries of what's possible in energy efficiency and environmental stewardship.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Technology Section -->
+    <section id="technology" class="py-16 lg:py-24 bg-gray-100 rounded-xl mx-4 my-8 shadow-inner">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Our Innovative Technologies</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Technology Card 1: Kinetic Energy Conversion -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-full mb-6 mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Advanced Kinetic Converters</h3>
+                    <p class="text-gray-700 text-center">
+                        Developing highly efficient systems that capture mechanical motion and convert it into usable electrical or thermal energy, from micro-scale vibrations to large-scale industrial processes.
+                    </p>
+                </div>
+
+                <!-- Technology Card 2: Thermal Energy Storage -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-purple-100 text-purple-600 rounded-full mb-6 mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">High-Density Thermal Storage</h3>
+                    <p class="text-gray-700 text-center">
+                        Creating materials and systems capable of storing significant amounts of thermal energy for extended periods, enabling consistent power supply and waste heat recovery.
+                    </p>
+                </div>
+
+                <!-- Technology Card 3: Integrated kinetithermal Systems -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                    <div class="flex items-center justify-center w-16 h-16 bg-green-100 text-green-600 rounded-full mb-6 mx-auto">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Synergistic K-T Integration</h3>
+                    <p class="text-gray-700 text-center">
+                        Developing hybrid solutions that seamlessly integrate kinetic and thermal principles for optimal energy harvesting, conversion, and long-duration storage across various applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Development Section -->
+    <section id="research" class="py-16 lg:py-24 bg-indigo-700 text-white rounded-xl mx-4 my-8 shadow-xl">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-4xl font-bold mb-8">Driving the Future Through R&D</h2>
+            <p class="text-lg leading-relaxed mb-8 opacity-90">
+                At kinetitherm, research and development is at our core. We are constantly exploring new materials, advanced thermodynamic cycles, and novel mechanical designs to push the boundaries of energy efficiency and sustainability. Our labs are buzzing with innovation, focused on delivering solutions for grid stability, industrial waste heat recovery, and portable power generation.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold mb-3">Our Research Pillars</h3>
+                    <ul class="list-disc list-inside space-y-2 text-lg">
+                        <li>Advanced Materials Science for Thermal & Kinetic Systems</li>
+                        <li>Thermodynamic Cycle Optimization</li>
+                        <li>High-Efficiency Mechanical-to-Electrical Conversion</li>
+                        <li>Smart Grid Integration & Energy Management</li>
+                        <li>Sustainable Manufacturing & Lifecycle Analysis</li>
+                    </ul>
+                </div>
+                <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold mb-3">Impact & Vision</h3>
+                    <p class="text-lg">
+                        We envision a world where energy is abundant, clean, and accessible, independent of fossil fuels. Our R&D efforts are directly aimed at making this vision a reality, contributing to a resilient energy infrastructure and a healthier planet. Join us in shaping the energy landscape of tomorrow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 lg:py-24 bg-white rounded-xl mx-4 my-8 shadow-inner">
+        <div class="container mx-auto px-6 max-w-3xl">
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-10 text-center">
+                Have questions, partnership inquiries, or just want to learn more? We'd love to hear from you.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Contact Information</h3>
+                    <p class="text-lg text-gray-700 mb-2">
+                        <strong>Email:</strong> <a href="mailto:info@kinetitherm.com" class="text-indigo-600 hover:underline">info@kinetitherm.com</a>
+                    </p>
+                    <p class="text-lg text-gray-700 mb-2">
+                        <strong>Phone:</strong> +1 (555) 123-4567
+                    </p>
+                    <p class="text-lg text-gray-700 mb-2">
+                        <strong>Address:</strong> 123 Energy Way, Innovation City, AB 12345
+                    </p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out" aria-label="LinkedIn">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out" aria-label="Twitter">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.791-1.574 2.16-2.725-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.59 0-6.492 2.924-6.492 6.526 0 .51.056 1.006.162 1.48C7.168 10.155 4.195 8.53 2.193 5.023c-.547.94-.863 2.03-.863 3.197 0 2.269 1.159 4.256 2.919 5.464-.858-.024-1.666-.263-2.373-.647v.077c0 3.18 2.26 5.518 5.28 6.09-.548.149-1.127.231-1.72.231-.424 0-.834-.041-1.234-.117.842 2.658 3.284 4.593 6.183 4.646-2.251 1.756-5.078 2.809-8.158 2.809-.533 0-1.055-.031-1.566-.092C2.905 21.603 6.166 22 9.479 22c10.166 0 15.727-8.438 15.727-15.776v-.667c1.08-.778 2.004-1.765 2.748-2.883z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Simple Contact Form (non-functional for this demo) -->
+                <form class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Send us a Message</h3>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200 ease-in-out" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200 ease-in-out" placeholder="your@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200 ease-in-out" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline transition duration-300 ease-in-out transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 rounded-t-xl shadow-inner">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 kinetitherm. All rights reserved.</p>
+            <p class="mt-2 text-sm text-gray-400">Innovating for a Sustainable Future</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile navigation toggle
+        const menuButton = document.getElementById('menu-button');
+        const navLinks = document.getElementById('nav-links');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+            navLinks.classList.toggle('flex-col');
+        });
+
+        // Close mobile menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (!navLinks.classList.contains('hidden')) {
+                    navLinks.classList.add('hidden');
+                    navLinks.classList.remove('flex');
+                    navLinks.classList.remove('flex-col');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
